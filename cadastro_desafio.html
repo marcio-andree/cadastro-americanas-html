@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="sc-kJtljt bIdYfI">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Americanas</title>
+    <style>
+    .imagemtopo{margin:10px auto; 
+    width: 1000px;px;
+    }
+    h1{
+        font-size: 40px;
+        color: #696969;
+        text-align: center;
+    }
+    .texto1{
+        font-size: 14px;
+        color:#696969;
+        text-align: center;
+    }
+    .campos_obrigatorios{ 
+        font-size: 12px;
+        color:#696969;
+       text-align: center;
+    }
+    .asterisco{color: red;
+
+    }
+           
+    }
+    label{
+        
+        display: inline-block;
+        
+    }
+    .cor_nome_formulario{
+        
+        color: #696969;
+    }
+    .letras_minusculas{
+        font-size: 10px;
+        color:#696969;
+    }
+
+    form{
+   
+        background-color: white;
+        padding: 10px;
+        margin: auto;
+        width: 300px;
+        border-radius: 20px;
+        margin-top: 10px;
+        }   
+        .botao {
+           background-color: brown;
+           color: #fff;
+           border:0px;
+           height: 25px;
+           border-radius: 5px;
+           margin-top: 20px;
+        }
+        .input {
+           height: 20px;
+           background-color: white;
+           color: grey;
+           border-radius: 5px;
+           width: 100%;
+        }
+        .dataNas{
+            height: 20px;
+           background-color: white;
+           color: grey;
+           border-radius: 5px;
+           width: 25%;
+
+        }
+        .cpf{ 
+            height: 20px;
+           background-color: white;
+           color: grey;
+           border-radius: 5px;
+           width: 30%;
+
+        }
+        .telefone{
+            height: 20px;
+           background-color: white;
+           color: grey;
+           border-radius: 5px;
+           width: 30%;
+
+        }
+     #botao{ text-align: center }
+    .botaoEnviar{
+    width: 250px;
+    text-align: center;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: red;
+    font-size: 15px;
+    color: white;
+}
+
+
+    </style>
+</head>
+<main>
+<body>
+   
+    <div class="imagemtopo"> <img src="imagens/topo.jpg" alt=" logo americanas"> <!-- precisa ser trocado por um nav-->
+    </div>
+    <div>
+        <h1> Criar seu cadastro</h1>
+    </div>
+
+    <div class="texto1">
+       <p> Veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br>
+            experiência personalizada :)<br>
+        </p> 
+    </div> 
+
+    <div class="campos_obrigatorios"> <span class="asterisco">*</span>Campos obrigatorios</div> <br> <br>
+    
+ 
+   
+     
+<form> <!-- inicio do formulário -->
+    
+  
+    <label> <span class="asterisco">*</span> <span class="cor_nome_formulario"> Nome Completo</span> </label> <br>
+    <input class="input" placeholder="Insira seu texto " type="text" name="texto" > <br> <br>
+    <label > <span class="asterisco">*</span> <span class="cor_nome_formulario"> Gênero </span> </label> </br>
+        <input type="radio" name="opcao"/> Masculino </br>
+        <input type="radio" name="opcao"/> Femnino </br>
+        <input type="radio" name="opcao" /> Prefiro não informar <br> <br>
+    <label > <span class="asterisco">*</span> <span class="cor_nome_formulario">Data de Nascimento</span> </label> <br> 
+    <span class="letras_minusculas">Necessário para identificar a maioridade no formato DD/MM/AAAA </span> <br> 
+    <input class="dataNas" placeholder="__/__/____" type="text" name="texto"> <br> <br>
+    <label> <span class="asterisco">*</span> <span class="cor_nome_formulario"> CPF </span> </label> <br>
+    <span class="letras_minusculas">Necessário para emissão das notas fiscais </span> <br>
+    <input class="cpf" class="input" placeholder="___.___.___.__ " type="text" name="texto" > <br> <br>
+    <label> <span class="asterisco">*</span><span class="cor_nome_formulario"> Telefone</span></label><br>
+    <input class="telefone"placeholder="(__)_____-____" type="tel" name="telefone"> <br>
+    <span class="letras_minusculas">caso a gente precise entrar em contato sobre seus pedidos </span> <br><br>
+    <label >
+     <input type="checkbox" name="checkbox"/> receber notificação por whatsApp </br><br>
+     <label > <span class="asterisco">*</span> <span class="cor_nome_formulario">E-mail</span></label><br>
+     <input class="input"placeholder="Insira seu e-mail" type="email" name="email"> <br><br>
+     <label >
+        <input type="checkbox" name="checkbox"/> receber e-mails promocionais </br><br>
+    <label> <span class="asterisco">*</span> <span class="cor_nome_formulario">Senha</span></label><br>
+    <span class="letras_minusculas">precisa ter entre 6 e 20 caracteres </span> <br><br>
+    <input class="input" placeholder="cadastre sua senha" type="password" name="senha"> <br>
+    <label >
+   <input type="range" name="intervalo" id="" min="0" max="100" step="10"> fraca <br><br>
+   <label >
+    <input type="checkbox" name="checkbox"/> compartilhar dados com parceiros</br>
+    para ter conteúdos personlizados, veja  <u>como funciona.</u> <br><br>
+    <div id="botao">  
+        <input class="botaoEnviar"  type="submit" value="Criar seu cadastro"> </div>  <br><br>
+    <span>não se preocupe nosso site é seguro ao criar seu cadastro você concorda com nossa <u>politica de privacidade</u> </span> <br>
+<span> ja tem cadastro? <u>entrar</u> </span>
+  
+      
+
+
+</form> <!-- fim do formulário-->
+
+ 
+</body>
+</main>
+</html>
